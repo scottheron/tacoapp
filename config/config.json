@@ -7,8 +7,8 @@
     "dialect": "postgres"
   },
   "production": {
-    "database": "nodetest",
-    "host": "127.0.0.1",
-    "dialect": "postgres"
+    "username": "postgres",
+    "password": "WDI2016",
+    "use_env_variable": "DATABASE_URL"
   }
 }
