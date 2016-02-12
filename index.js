@@ -15,7 +15,9 @@ app.get('/', function(req, res) {
 
 app.use('/tacos', require('./controllers/tacos'));
 
-var port = 3000;
+var port = process.env.PORT || 3000;
 app.listen(port, function() {
   console.log("You're listening to the smooth sounds of port " + port);
 });
+
+
